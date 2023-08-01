@@ -1,0 +1,47 @@
+##################################
+class Point:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def distance(self):
+        return self.y - self.x
+
+    def milieu(self):
+        return (self.y + self.x)/2
+
+
+pt = Point(3,10)
+
+print(pt.distance())
+
+####################################
+from math import *
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def getX(self):
+        return self.x
+
+    def getY(self):
+        return self.y
+
+
+
+def distance(p1:Point,p2:Point):
+    return sqrt(((p1.x - p2.x)*(p1.x - p2.x)) + ((p1.y-p2.y)*(p1.y-p2.y)))
+
+def distance(p1:Point,p2:Point):
+    return sqrt(((p1.x - p2.x)*(p1.x - p2.x)) + ((p1.y-p2.y)*(p1.y-p2.y)))
+
+pt1 = Point(3, 10)
+pt2 = Point(2, 4)
+print(distance(pt1,pt2))
+
+
+
+
+
+
+
